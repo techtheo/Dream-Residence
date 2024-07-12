@@ -1,0 +1,195 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+
+body{
+    /* width: 100%; */
+    /* height: 100vh; */
+    background-image: url(./josh-hild-0_N6VO_DAN4-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+    overflow:hidden;
+}
+.main, .header {
+    position: relative; /* Ensure the overlay is positioned relative to this */
+    display: flex;
+    flex-direction: column;
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); 
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+}
+
+.logo  {
+    width: 30%;
+    height: 40%;
+}
+
+.nav-links {
+    padding-left: 100px;
+    position: absolute;
+    list-style: none;
+    display: flex;
+    gap: 40px;
+}
+
+#arrow {
+    color: white;
+    max-width: 70px;
+
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-family: Akata Makata;
+}
+
+.auth-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.auth-buttons .login,
+.auth-buttons .signup {
+    text-decoration: none;
+    font-size: 14px;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.auth-buttons .login {
+    font-size: 20px;
+    font-weight: 500;
+    color: white;
+}
+
+.auth-buttons .signup {
+    color: black;
+    background-color: #a1ff0a;
+    border-radius: 30px;
+    padding-top: 13px;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.hero {
+    flex: 1;
+    /* display: flex; */
+    /* flex-direction: column; */
+    justify-content: center;
+    align-items: center;
+    margin-top: 130px;
+    text-align: center;
+    
+}
+
+.hero-text h1 {
+    font-size: 48px;
+    color: white;
+    margin-bottom: 20px;
+    justify-content: space-between;
+    font-family: Akata Makata;
+}
+
+.agents img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    margin-top: 70px;
+}
+
+.agents {
+    display: flex;
+    margin-top: -20px;
+    margin-left: 48px;
+}
+
+.hero-text .p1 {
+    font-size: 18px;
+    color: white;
+    padding-top: 20px;
+    /* padding-right: 880px; */
+    line-height: 12px;
+    text-align: justify;
+    margin-left: 40px;
+    font-family: Akata Makata;
+}
+
+/* .hero-text .p2 {
+    font-size: 18px;
+    color: white;
+    padding-right: 903px;
+}
+
+.hero-text .p3 {
+    font-size: 18px;
+    color: white;
+    padding-right: 990px;
+} */
+
+
+
+.property-buttons {
+    display: flex;
+    gap: 10px;
+    /* margin-bottom: 90px; */
+    margin-left: 40px;
+    margin-top: 18px;
+}
+
+.property-buttons .btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #26303C;
+    color: white;
+    cursor: pointer;
+    margin-top: 25px;
+    font-family: Akata Makata;
+    font-weight: 800;
+}
+
+.search {
+    width: 265px;
+    height: 60px;
+    border-radius: 30px;
+    float: right;
+    margin-top: -5%;
+    margin-right: 40px;
+    background-color: #a1ff0a;
+    border: 1px solid #a1ff0a;
+    outline: none;
+    padding-left: 30px;
+}
+
+::placeholder {
+    color: black;
+    font-weight: 800;
+}
+
+#icon {
+    float: right;
+    margin-top: -3.6%;
+    z-index: 2;
+    margin-right: 60px;
+}
